@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Roboto';
+}
+
+/*start topbar*/
+.topBar{
+    background-color: #9fc5f8;
+    color: #fff;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 38%;
+}
+
+.nav h1{
+    font-size: 2.4rem;
+}
+
+.nav a{
+    color:#fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+/*end topbar*/
+
+
+.container, .nav{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*start content*/
+
+/*start tempBar*/
+.subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: 2px solid #1b1b1b;
+    margin-bottom: 35px;
+}
+
+.subtitle h2{
+    font-size: 1.7rem;
+}
+
+.subtitle select{
+    width: 53px;
+}
+
+.subtitle label{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.subtitle select{
+    font-size: 1rem;
+    padding: 5px;
+}
+/*end tempBar*/
+
+/*start forecast*/
+.row{
+    display: flex;
+}
+
+.forecast{
+    flex: 1;
+    text-align: center;
+    background-color: #dddddd;
+    padding: 20px 0;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.forecast:last-child{
+    margin-right: 0px;
+}
+
+.forecast img{
+    width: 140px;
+    margin: 35px 0px;
+    border-radius: 50%;
+}
+
+.forecast p{
+    font-size: 1rem;
+}
+
+.forecast #texto{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.temperatures{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.high, .low{
+    font-weight: 900;
+    font-size: 1.3rem;
+    display: flex;
+    display: inline;
+    margin: 0 40px;
+}
+
+.high::after, .low::after{
+    content: "°";
+}
+
+.high{
+    color: #cf2a27;
+}
+
+.low{
+    color: #317ce4;
+}
+/*end forecast*/
+
+/*end content*/
+
+/*start footer-box*/
+.footer-box{
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+
+.cookie-policy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 78%;
+    height: 100px;
+    padding: 60px;
+    margin: 0 auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    background-color: #eeeeee;
+}
+
+.text{
+    width: 70%;
+}
+
+.text h2{
+    font-size: 1.5rem;
+}
+
+.text p{
+    font-size: 1rem;
+}
+
+.btn{
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+    background-color: #9fc5f8;
+}
+/*end footer-box*/
